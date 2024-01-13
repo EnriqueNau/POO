@@ -1,0 +1,39 @@
+import java.util.Scanner;
+//Documentar:Se importa la paqueteria Scanner para poder leer datos desde teclado
+public class Main {
+    public static void main(String[]args){
+        int numint;
+        double numdbl,res1,res2,res3,res4,res5,res6;
+        //Mensaje de Bienvenida
+        System.out.printf("Bienvenidos,favor de seguir las instrucciones\n");
+        //Doumentar:Imrpimer el mensaje de bienbenida con el printf o podria ser con un println
+        Scanner scanner = new Scanner(System.in);
+        //Documentar:Se utiliza para crear un objeto de la clase (Scanner) en Java, que proporciona
+        // métodos para leer diferentes tipos de datos.
+        System.out.printf("\nDigite un numero entero ");
+        //Documentar:Le pedimos al usuario que digite un numero de tipo entero
+        numint = scanner.nextInt();
+        //Documentar: aqui lo que hace es detenerse para darle la opcion al usuario para ingresar en la variable
+        //numint un numero de tipo entero.
+        System.out.printf("\nDigite un numero decimal ");
+        numdbl = scanner.nextDouble();
+        //Documentar:Y aqui lo que hace es detenerse para darle la opcion al usuario para ingresar en la variable
+        //numdbl un numero de tipo doubl.
+        res1= numdbl + numint;
+        res2= numint / (int)numdbl;
+        res3= numint / numdbl;
+        res4= numdbl / numint;
+        res5= (int)numdbl / numint;
+        res6= (int)numdbl + numint;
+        //En esta parte se hacen las operaciones y se imprime el resultado pero donde tiene entre parentesis un int es por que estamos
+        // cambiando su valor de double a int, se va imoprimir un valor visual entero pero su ivariable es de tipo double.
+        System.out.printf("\nEl valor de la operacion = " + res1);
+        System.out.printf("\nEl valor de la operacion = " + res2);
+        System.out.printf("\nEl valor de la operacion = " + res3);
+        System.out.printf("\nEl valor de la operacion = " + res4);
+        System.out.printf("\nEl valor de la operacion = " + res5);
+        System.out.printf("\nEl valor de la operacion = " + res6);
+        //Integrantes:Enrique Nau Xicohtencatl Carreto, Brayan Jesus Peralta Mancilla
+        //Paola Hernandez Calderon y Jennifer Saucedo Zacamo "5I"
+    }
+}
